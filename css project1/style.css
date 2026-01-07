@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1b1b1f;
+    background-image: url("../img/contry/background.png");
+    background-size: overlay;
+    background-position: center;
+    backdrop-filter: blur(3px);
+    color: #e0e0e0;
+}
+
+header {
+    width: 100%;
+    background: #242428;
+    padding: 15px 0px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px rgba(255, 255, 255, 0.625) solid;
+}
+
+.logo img {
+    margin-left: 40px;
+    height: 40px;
+    width: 150px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px #9b9bff);
+}
+
+nav {
+    display: flex;
+    margin-right: 50px; 
+}
+
+nav a {
+    padding: 10px;
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a:hover {
+    color: white;
+    background-color:#9b9bff95 ;
+    border: 1px #9b9bff solid ;
+    border-radius: 20px ;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #9b9bff;
+    transition: width 0.3s;
+}
+nav a:hover::after {
+    width: 100%;
+}
+
+
+
+
+footer {
+    border-top: 1px rgba(255, 255, 255, 0.625) solid;
+    text-align: center;
+    padding: 10px;
+    background: #242428;
+    color: #777;
+    position: relative;
+}
